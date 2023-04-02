@@ -1,0 +1,27 @@
+{
+    "content_scripts": [
+        {
+            "css": [
+                "Omni.css"
+            ],
+            "matches": [
+                "https://github.com/",
+                "https://github.com/*",
+                "http://github.com/*/*",
+                "http://github.com/*/*/*"
+            ],
+            "run_at": "document_start"
+        }
+    ],
+    "description": "Custom Omni Theme for Github.",
+    "icons": {
+        "48": "icon.png",
+        "96": "icon.png"
+    },
+    "manifest_version": 2,
+    "name": "Github Omni Theme",
+    "permissions": [
+        "storage"
+    ],
+    "version": "1.1.0"
+}
